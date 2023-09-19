@@ -1,0 +1,12 @@
+[ 2023-08-29 21:03:50,957 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-08-29 21:03:50,958 ] 187 werkzeug - INFO -  * Debugger PIN: 717-535-271
+[ 2023-08-29 21:03:57,981 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:03:57] "GET / HTTP/1.1" 200 -
+[ 2023-08-29 21:04:04,662 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:04:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-08-29 21:05:00,680 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-08-29 21:05:00,731 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:00] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2023-08-29 21:05:00,734 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:00] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2023-08-29 21:05:01,152 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:01] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2023-08-29 21:05:01,191 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:01] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-08-29 21:05:27,971 ] 87 root - INFO - Dataframe Gathered
+[ 2023-08-29 21:05:28,191 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:28] "POST /predict HTTP/1.1" 200 -
+[ 2023-08-29 21:05:30,156 ] 187 werkzeug - INFO - 172.18.0.2 - - [29/Aug/2023 21:05:30] "GET /predict HTTP/1.1" 200 -

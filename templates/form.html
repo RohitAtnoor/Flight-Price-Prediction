@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 50;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .form-group {
+    flex: 0 0 calc(40% - 50px);
+    max-width: calc(40% - 50px);
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100px; /* Fixed width for labels */
+  }
+
+  .form-group select,
+  .form-group input {
+    display: block;
+    margin-bottom: 10px;
+    width: 60%; /* Take up the entire width of the form-group div */
+  }
+
+  .submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10 auto; /* Center the submit button */
+  }
+</style>
+</head>
+<body>
+
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+  <div class="container">
+    <div class="form-group">
+      <label for="Day">Day:</label>
+      <input type="text" id="Day" name="Day" placeholder="Enter Date of journey">
+    </div>
+
+    <div class="form-group">
+      <label for="Month">Month:</label>
+      <input type="text" id="Month" name="Month" placeholder="Enter Month of journey">
+    </div>
+
+    <div class="form-group">
+      <label for="Year">Year:</label>
+      <input type="text" id="Year" name="Year" placeholder="Enter year of journey">
+    </div>
+
+    <div class="form-group">
+      <label for="Dep_hour">Dep_hour:</label>
+      <input type="text" id="Dep_hour" name="Dep_hour" placeholder="Enter Departure Hour">
+    </div>  
+    
+    <div class="form-group">
+      <label for="Dep_min">Dep_min:</label>
+      <input type="text" id="Dep_min" name="Dep_min" placeholder="Enter Departure Minute">
+    </div> 
+
+    <div class="form-group">
+      <label for="Arival_hour">Arival_hour:</label>
+      <input type="text" id="Arival_hour" name="Arival_hour" placeholder="Enter Arrival Hour">
+    </div> 
+
+    <div class="form-group">
+      <label for="Arival_min">Arival_min:</label>
+      <input type="text" id="Arival_min" name="Arival_min" placeholder="Enter Arrival Minute">
+    </div> 
+
+    <div class="form-group">
+      <label for="Trveling_hour">Trveling_hour:</label>
+      <input type="text" id="Trveling_hour" name="Trveling_hour" placeholder="Enter Travel Hour">
+    </div> 
+
+    <div class="form-group">
+      <label for="Trveling_min">Trveling_min:</label>
+      <input type="text" id="Trveling_min" name="Trveling_min" placeholder="Enter Travel Minute">
+    </div> 
+  
+    <div class="form-group">
+      <label for="Airline">Airline:</label>
+      <select id="Airline" name="Airline">
+        <option value="Jet Airways">Jet Airways</option>
+        <option value="IndiGo">IndiGo</option>
+        <option value="Air India">Air India</option>
+        <option value="SpiceJet">SpiceJet</option>
+        <option value="Vistara">Vistara</option>
+        <option value="Air Asia">Air Asia</option>
+        <option value="GoAir">GoAir</option>
+        <option value="Jet Airways Business">Jet Airways Business</option>
+        <option value="Vistara Premium economy ">Vistara Premium economy </option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="Source">Source:</label>
+      <select id="Source" name="Source">
+        <option value="Delhi">Delhi</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Destination">Destination:</label>
+      <select id="Destination" name="Destination">
+        <option value="Cochin">Cochin</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Kolkata">Kolkata</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Total_Stops">Total_Stops:</label>
+      <select id="Total_Stops" name="Total_Stops">
+        <option value="0 Stops">0 Stops</option>
+        <option value="1 Stops">1 Stops</option>
+        <option value="2 Stops">2 Stops</option>
+        <option value="3 Stops">3 Stops</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="submit-button" style="text-align: center;">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+</body>
+</html>
